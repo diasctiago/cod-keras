@@ -23,9 +23,9 @@ html, body{
 
 #chart {
 	position: fixed;
-	left: 31.5%;
-	top: 2.5%;
-	width: 35%;
+	left: 0%;
+	top: 100%;
+	width: 30%;
 	background-color: transparent;
 	z-index: 1;
 }
