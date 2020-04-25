@@ -66,8 +66,8 @@ let gridBounding = null;
 let createGrid = () => {
 
 	pixelDim = 20;
-	anchorX = (canvas.width / 2) - (pixelDim * (gridWidth/2));
-	anchorY = canvas.height / 2 - (pixelDim * (gridHeight/5));
+	anchorX = (canvas.width / 2) - (pixelDim * (gridWidth/1));
+	anchorY = canvas.height / 2 - (pixelDim * (gridHeight/2));
 
 	gridBounding = [anchorX, anchorX + (pixelDim * gridWidth), anchorY, anchorY + (pixelDim * gridHeight)];
 
@@ -176,7 +176,7 @@ let model = null;
 
 async function loadNeuralNet() {
 	// link para seu arquivo model.json
-	model = await tf.loadLayersModel('https://qodatecnologia.github.io/tfjs/json/model.json');
+	model = await tf.loadLayersModel('https://raw.githubusercontent.com/diasctiago/cod-keras/master/models/model.json');
 
 }
 // Parses our grid into a matrix so we can then convert to a tensor.
